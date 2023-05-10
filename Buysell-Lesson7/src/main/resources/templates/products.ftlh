@@ -96,6 +96,27 @@
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+        .custom-file-input {
+            display: none;
+        }
+
+        .custom-file-label {
+            background-color: #555;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .custom-file-input:focus + .custom-file-label {
+            outline: dotted;
+        }
+
+        .custom-file-input:active + .custom-file-label {
+            background-color: #555;
+        }
+
     </style>
 </head>
 <body>
@@ -145,14 +166,25 @@
     <hr>
     <h3>Write new comment</h3>
     <form action="/product/create" method="post" enctype="multipart/form-data">
-        Title: <input type="text" name="title"/><br><br>
-        Description: <input type="text" name="description"/><br><br>
-        Rate: <input type="number" name="price"/><br><br>
-        Address: <input type="text" name="city"/><br><br>
-        First picture: <input type="file" name="file1"/><br><br>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title"><br><br>
+
+        <label for="description">Description:</label>
+        <input type="text" name="description" id="description"><br><br>
+
+        <label for="price">Rate:</label>
+        <input type="number" name="price" id="price"><br><br>
+
+        <label for="city">Address:</label>
+        <input type="text" name="city" id="city"><br><br>
+
+        <label for="file1" class="custom-file-label">Select File:</label>
+        <input type="file" name="file1" id="file1" class="custom-file-input"><br><br>
+
         <input type="hidden" name="_csrf" value="${_csrf.token}">
-        <input type="submit" value="Add comment!"/>
+        <input type="submit" value="Add Comment">
     </form>
+
 </#if>
 
 </body>

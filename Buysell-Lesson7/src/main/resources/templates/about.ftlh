@@ -59,7 +59,6 @@
     </ul>
 </nav>
 <h1>About Us</h1>
-<img src="" alt="Description of the image">
 <p>Welcome to LinguaVista, a leading language school specializing in immersive language learning experiences. At LinguaVista, we believe that language acquisition is not just about memorizing vocabulary and grammar rules, but about immersing oneself in the language and culture. Our mission is to provide students with the tools and opportunities to become confident and proficient language speakers.</p>
 <p>Our experienced team of language instructors are passionate about teaching and dedicated to creating dynamic and engaging learning environments. We offer a wide range of language courses tailored to different proficiency levels and learning objectives. Whether you are a beginner or an advanced learner, we have a course that suits your needs.</p>
 <p>In addition to our language courses, we also organize cultural events, language exchanges, and study trips to further enhance the language learning experience. These activities provide students with the opportunity to practice their language skills in real-life contexts and connect with other language enthusiasts.</p>

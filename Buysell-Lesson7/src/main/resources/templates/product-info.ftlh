@@ -61,7 +61,7 @@
         <li><a href="/contact">Contact</a></li>
     </ul>
 </nav>
-<img src="/images/${product.getPreviewImageId()}">
+<img src="/images/${product.getPreviewImageId()}" width="300" height="200">
 <b>Title of the comment: </b>${product.title}<br>
 <b>Description of the comment: </b>${product.description}<br>
 <b>Rate: </b>${product.price}<br>

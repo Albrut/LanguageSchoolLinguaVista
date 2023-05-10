@@ -27,9 +27,43 @@
             display: block;
             margin-top: 5px;
         }
+        nav {
+            background-color: #333; /* Цвет фона навигационного меню */
+            padding: 10px;
+            color: #fff; /* Цвет текста в навигационном меню */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            color: #fff; /* Цвет текста в ссылках навигационного меню */
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #555; /* Цвет фона при наведении на ссылку */
+        }
     </style>
 </head>
 <body>
+<nav>
+    <ul>
+        <li><a href="/">Main page</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
 <h1>Contacts</h1>
 <div class="contact-info">
     <b>Address:</b>
